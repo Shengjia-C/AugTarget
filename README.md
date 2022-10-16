@@ -31,7 +31,7 @@ python train.py --net-name agpcnet_1 --batch-size 8 --save-iter-step 100 --datas
 python inference.py --pkl-path {checkpoint path} --image-path {image path}
 ```
 
-## Evaluation
+### Evaluation
 ```python
 python evaluation.py --dataset {dataset name} 
                      --sirstaug-dir {base dir of sirstaug}
