@@ -52,7 +52,7 @@ python evaluation.py --dataset {dataset name}
 | AGPCNet+AugTarget  | Merged    | 0.7576    | 0.8658 | 0.6780 | 0.8081   | 0.9395 | [model](./result/merged/merged_AugTarget.pkl) |
 
 ## [Acknowledgement](#AugTarget)
-During implementation, our Target Augmentation algorithm is based on the random strategy of [Random-Erasing](https://github.com/zhunzhong07/Random-Erasing), thanks for their contributions.
+Our Target Augmentation algorithm is based on the random strategy of [Random-Erasing](https://github.com/zhunzhong07/Random-Erasing), thanks for their contributions.
 This repository is based on framework from [AGPCNet](https://github.com/Tianfang-Zhang/AGPCNet) and modified part of the code.
 
 
