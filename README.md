@@ -52,7 +52,7 @@ python evaluation.py --dataset {dataset name}
 
 ## [Acknowledgement](#AugTarget)
 Our Target Augmentation algorithm is based on the random strategy of [Random-Erasing](https://github.com/zhunzhong07/Random-Erasing), thanks for their contributions.
-This repository is based on framework from [AGPCNet](https://github.com/Tianfang-Zhang/AGPCNet) and modified part of the code.
+This repository is based on baseline model from [AGPCNet](https://github.com/Tianfang-Zhang/AGPCNet) and modified part of the code.
 
 
 ## [Contact](#AugTarget)
