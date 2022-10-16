@@ -17,7 +17,7 @@ from utils.lr_scheduler import *
 from utils.metrics import SegmentationMetricTPFNFP
 
 import torch.nn.functional as F ######
-
+import random
 
 def parse_args():
     #
@@ -241,7 +241,7 @@ class Trainer(object):
         self.eval_loss, self.miou, self.fmeasure = np.mean(eval_losses), miou, fmeasure
 
         
-import random
+
 
 
 
@@ -256,8 +256,7 @@ def Batch_Augmentation1 (img, mask):
 
         img_s.append(img[i:i+1])
         mask_s.append(mask[i:i+1])
-            
-        
+
     data_aug = []
     label_aug = []
         
@@ -280,8 +279,7 @@ def Batch_Augmentation1 (img, mask):
             else:
                 data_aug.append(torch.cat((img_s[img.shape[0]-1], img_s[0]),2))
                 label_aug.append(torch.cat((mask_s[img.shape[0]-1], mask_s[0]),2))
-                    
-                    
+
     data = torch.cat(data_aug, dim=0)
     label = torch.cat(label_aug, dim=0)
 
@@ -290,8 +288,7 @@ def Batch_Augmentation1 (img, mask):
         
     # data = torch.cat((img,data),0)
     # label = torch.cat((mask,label),0)
-        
-        
+
     return img, mask
         
         
@@ -306,8 +303,7 @@ def Batch_Augmentation2 (img, mask):
 
         img_s.append(img[i:i+1])
         mask_s.append(mask[i:i+1])
-            
-        
+
     data_aug = []
     label_aug = []
         
@@ -330,8 +326,7 @@ def Batch_Augmentation2 (img, mask):
             else:
                 data_aug.append(torch.cat((img_s[img.shape[0]-1], img_s[0]),2))
                 label_aug.append(torch.cat((mask_s[img.shape[0]-1], mask_s[0]),2))
-                    
-                    
+
     data = torch.cat(data_aug, dim=0)
     label = torch.cat(label_aug, dim=0)
 
@@ -340,8 +335,7 @@ def Batch_Augmentation2 (img, mask):
         
     img = torch.cat((img,data),0)
     mask = torch.cat((mask,label),0)
-        
-        
+
     return img, mask
     
     
