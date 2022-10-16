@@ -43,9 +43,9 @@ python evaluation.py --dataset {dataset name}
 
 | Methods | Data      | Precision | Recall | mIoU   | Fmeasure | AUC    | Download | 
 | :---:   | :---:     | :---:     | :---:  | :---:  | :---:    | :---:  | :---:    |
-| AGPCNet | MDFA      | 0.5939    | 0.7241 | 0.4843 | 0.6525   | 0.8682 | [model](./AGPCNet/mdfa_mIoU-0.4843_fmeasure-0.6525.pkl) |
-| AGPCNet | SIRST Aug | 0.8323    | 0.8542 | 0.7288 | 0.8431   | 0.9344 | [model](./AGPCNet/sirstaug_mIoU-0.7288_fmeasure-0.8431.pkl) |
-| AGPCNet | Merged    | 0.7453    | 0.8384 | 0.6517 | 0.7891   | 0.9194 | [model](./AGPCNet/merged_mIoU-0.6517_fmeasure-0.7891.pkl) |
+| AGPCNet | MDFA      | 0.5939    | 0.7241 | 0.4843 | 0.6525   | 0.8682 | [model](./baseline/mdfa_mIoU-0.4843_fmeasure-0.6525.pkl) |
+| AGPCNet | SIRST Aug | 0.8323    | 0.8542 | 0.7288 | 0.8431   | 0.9344 | [model](./baseline/sirstaug_mIoU-0.7288_fmeasure-0.8431.pkl) |
+| AGPCNet | Merged    | 0.7453    | 0.8384 | 0.6517 | 0.7891   | 0.9194 | [model](./baseline/merged_mIoU-0.6517_fmeasure-0.7891.pkl) |
 | AGPCNet+AugTarget | MDFA      | 0.6482    | 0.7141 | 0.5146 | 0.6795   | 0.8699 | [model](./result/mdfa/mdfa_AugTarget.pkl) |
 | AGPCNet+AugTarget  | SIRST Aug | 0.8449    | 0.8704 | 0.7505 | 0.8574   | 0.9378 | [model](./result/sirstaug/sirstaug_AugTarget.pkl) |
 | AGPCNet+AugTarget  | Merged    | 0.7576    | 0.8658 | 0.6780 | 0.8081   | 0.9395 | [model](./result/merged/merged_AugTarget.pkl) |
