@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/language-PyTorch-blue.svg?style=flat-square)
 
-<img src="AugTarget.png" width="100px">
+<img src="AugTarget.png" width="600px">
 
 ## [Datasets](#AugTarget)
 
