@@ -1,10 +1,8 @@
 # AugTarget Data Augmentation
 
-![outline](AugTarget.png)
-
-
 ![](https://img.shields.io/badge/language-PyTorch-blue.svg?style=flat-square)
 
+<img src="AugTarget.png" width="100px">
 
 ## [Datasets](#AugTarget)
 
