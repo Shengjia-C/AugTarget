@@ -4,13 +4,13 @@
 ![](https://img.shields.io/badge/language-PyTorch-blue.svg?style=flat-square)
 
 
-## [Datasets](#attention-guided-pyramid-context-networks)
+## [Datasets](#AugTarget)
 
 - MDFA dataset is available at [MDvsFa cGan](https://github.com/wanghuanphd/MDvsFA_cGAN).
 - SIRST dataset is available at [SIRST](https://github.com/YimianDai/sirst).
 - The SIRST Augment dataset: download from [Google Drive](https://drive.google.com/file/d/13hhEwYHU19oxanXYf-wUpZ7JtiwY8LuT/view?usp=sharing) or [BaiduYun Drive](https://pan.baidu.com/s/1c35pADjPhkAcLwmU-u0RBA) with code `ojd4`.
 
-## [Usage](#attention-guided-pyramid-context-networks)
+## [Usage](#AugTarget)
 
 ### Train
 ```python
@@ -31,7 +31,7 @@ python train.py --net-name agpcnet_1 --batch-size 8 --save-iter-step 100 --datas
 python inference.py --pkl-path {checkpoint path} --image-path {image path}
 ```
 
-### Evaluation
+## Evaluation
 ```python
 python evaluation.py --dataset {dataset name} 
                      --sirstaug-dir {base dir of sirstaug}
@@ -40,7 +40,7 @@ python evaluation.py --dataset {dataset name}
 ```
 
 
-## [Results](#attention-guided-pyramid-context-networks)
+## [Results](#AugTarget)
 
 | Methods | Data      | Precision | Recall | mIoU   | Fmeasure | AUC    | Download | 
 | :---:   | :---:     | :---:     | :---:  | :---:  | :---:    | :---:  | :---:    |
@@ -51,12 +51,12 @@ python evaluation.py --dataset {dataset name}
 | AGPCNet+AugTarget  | SIRST Aug | 0.8449    | 0.8704 | 0.7505 | 0.8574   | 0.9378 | [model](./result/sirstaug/sirstaug_AugTarget.pkl) |
 | AGPCNet+AugTarget  | Merged    | 0.7576    | 0.8658 | 0.6780 | 0.8081   | 0.9395 | [model](./result/merged/merged_AugTarget.pkl) |
 
-### Acknowledgement
+## [Acknowledgement](#AugTarget)
 During implementation, our Target Augmentation algorithm is based on the random strategy of [Random-Erasing](https://github.com/zhunzhong07/Random-Erasing), thanks for their contributions.
 This repository is based on framework from [AGPCNet](https://github.com/Tianfang-Zhang/AGPCNet) and modified part of the code.
 
 
-### Contact
+## [Contact](#AugTarget)
 If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.com.
 
 
