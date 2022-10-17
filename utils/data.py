@@ -13,7 +13,7 @@ __all__ = ['SirstAugDataset', 'MDFADataset', 'MergedDataset']
 
 
 class MergedDataset(Data.Dataset):
-    def __init__(self, mdfa_base_dir='/home/chenshengjia/data_aug/mdfa_plus/', sirstaug_base_dir='/home/chenshengjia/data_aug/sirstaug_plus/', mode='train', base_size=256):
+    def __init__(self, mdfa_base_dir='/home/chenshengjia/data/MDvsFA_cGAN/data', sirstaug_base_dir='/home/chenshengjia/data/sirst_aug', mode='train', base_size=256):
         assert mode in ['train', 'test']
 
         self.sirstaug = SirstAugDataset(base_dir=sirstaug_base_dir, mode=mode)
@@ -31,7 +31,7 @@ class MergedDataset(Data.Dataset):
 
 
 class MDFADataset(Data.Dataset):
-    def __init__(self, base_dir='/home/chenshengjia/data_aug/mdfa_plus/', mode='train', base_size=256):
+    def __init__(self, base_dir='/home/chenshengjia/data/MDvsFA_cGAN/data', mode='train', base_size=256):
     #def __init__(self, base_dir='../data/MDFA', mode='train', base_size=256):
         
         assert mode in ['train', 'test']
@@ -84,7 +84,7 @@ class MDFADataset(Data.Dataset):
 
 
 class SirstAugDataset(Data.Dataset):
-    def __init__(self, base_dir='/home/chenshengjia/data_aug/sirstaug_plus/', mode='train'):
+    def __init__(self, base_dir='/home/chenshengjia/data/sirst_aug', mode='train'):
         
         base_size=256
         if mode == 'train':
