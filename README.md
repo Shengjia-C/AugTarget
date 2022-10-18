@@ -60,7 +60,7 @@ If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.co
 
 ## [Referrences]
 
-1. Zhong, Zhun, et al. "Random erasing data augmentation." Proceedings of the AAAI conference on artificial intelligence. Vol. 34. No. 07. 2020. [[code]](Random-Erasing](https://github.com/zhunzhong07/Random-Erasing) 
+1. Zhong, Zhun, et al. "Random erasing data augmentation." Proceedings of the AAAI conference on artificial intelligence. Vol. 34. No. 07. 2020. [[code]](https://github.com/zhunzhong07/Random-Erasing) 
 
 2. Zhang, Tianfang, et al. "AGPCNet: Attention-Guided Pyramid Context Networks for Infrared Small Target Detection." arXiv preprint arXiv:2111.03580 (2021). [[code]](https://github.com/Tianfang-Zhang/AGPCNet)
 
