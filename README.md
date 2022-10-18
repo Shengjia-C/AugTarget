@@ -4,12 +4,12 @@
 
 <img src="AugTarget.png" width="500px">
 
-## [Datasets](#AugTarget)
+## Datasets
 
 - MDFA dataset is available at [MDvsFa cGan](https://github.com/wanghuanphd/MDvsFA_cGAN).
 - The SIRST Augment dataset: download from [Google Drive](https://drive.google.com/file/d/13hhEwYHU19oxanXYf-wUpZ7JtiwY8LuT/view?usp=sharing) or [BaiduYun Drive](https://pan.baidu.com/s/1c35pADjPhkAcLwmU-u0RBA) with code `ojd4`.
 
-## [Usage](#AugTarget)
+## Usage
 
 ### Train
 ```python
@@ -39,7 +39,7 @@ python evaluation.py --dataset {dataset name}
 ```
 
 
-## [Results](#AugTarget)
+## Results
 
 | Methods | Data      | Precision | Recall | mIoU   | Fmeasure | AUC    | Download | 
 | :---:   | :---:     | :---:     | :---:  | :---:  | :---:    | :---:  | :---:    |
@@ -50,16 +50,16 @@ python evaluation.py --dataset {dataset name}
 | AGPCNet+AugTarget  | SIRST Aug | 0.8449    | 0.8704 | 0.7505 | 0.8574   | 0.9378 | [model](./result/sirstaug/sirstaug_AugTarget.pkl) |
 | AGPCNet+AugTarget  | Merged    | 0.7576    | 0.8658 | 0.6780 | 0.8081   | 0.9395 | [model](./result/merged/merged_AugTarget.pkl) |
 
-## [Acknowledgement](#AugTarget)
+## Acknowledgement
 Our Target Augmentation algorithm is based on the random strategy of [Random-Erasing](https://github.com/zhunzhong07/Random-Erasing), thanks for their contributions.
 This repository is based on baseline model from [AGPCNet](https://github.com/Tianfang-Zhang/AGPCNet) and modified part of the code.
 
 
-## [Contact](#AugTarget)
+## Contact
 If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.com.
 
-## [Referrences](#AugTarget)
 
+## Referrences
 1. Zhong, Zhun, et al. "Random erasing data augmentation." Proceedings of the AAAI conference on artificial intelligence. Vol. 34. No. 07. 2020. [[code]](https://github.com/zhunzhong07/Random-Erasing) 
 
 2. Zhang, Tianfang, et al. "AGPCNet: Attention-Guided Pyramid Context Networks for Infrared Small Target Detection." arXiv preprint arXiv:2111.03580 (2021). [[code]](https://github.com/Tianfang-Zhang/AGPCNet)
