@@ -180,20 +180,20 @@ class Target_Augmentation1(object):
                 
                 if img_aug[0,x[i],y[i]] > 0:
                             
-                        xx, yy = np.mgrid[:h[i], :w[i]]             
-                        circle = (yy - h[i]//2) ** 2 + (xx - w[i]//2) ** 2
+                        m1, m2 = np.mgrid[:h[i], :w[i]]
+                        circle = (m2 - h[i]//2) ** 2 + (m1 - w[i]//2) ** 2
                         
-                        circle = -circle + np.mean((img_aug)[0])
-                        circle[circle < np.min((img_aug)[0])] = np.min((img_aug)[0])
-                        sc = int(np.min((img_aug)[0])/np.max((img_aug)[0]) * np.mean((img_aug)[0]))  
-                        circle[circle >= sc] = np.max((img_aug)[0])
+                        target = -target + np.mean((img_aug)[0])
+                        target[target < np.min((img_aug)[0])] = np.min((img_aug)[0])
+                        theta = int(np.min((img_aug)[0])/np.max((img_aug)[0]) * np.mean((img_aug)[0]))
+                        target[target >= theta] = np.max((img_aug)[0])
 
-                        hh = circle.shape[0]
-                        ww = circle.shape[1]
+                        hh = target.shape[0]
+                        ww = target.shape[1]
                         
-                        img_aug[0, x[i]:x[i]+hh, y[i]:y[i]+ww] = circle
-                        img_aug[1, x[i]:x[i]+hh, y[i]:y[i]+ww] = circle
-                        img_aug[2, x[i]:x[i]+hh, y[i]:y[i]+ww] = circle
+                        img_aug[0, x[i]:x[i]+hh, y[i]:y[i]+ww] = target
+                        img_aug[1, x[i]:x[i]+hh, y[i]:y[i]+ww] = target
+                        img_aug[2, x[i]:x[i]+hh, y[i]:y[i]+ww] = target
                         mask_aug[x[i]:x[i]+hh, y[i]:y[i]+ww] = 255
 
         img = img_aug.swapaxes(0,2)
@@ -247,22 +247,22 @@ class Target_Augmentation2(object):
                     y.append(random.randint(0, img_aug.shape[2] - w[i]))
                     
                 if img_aug[0,x[i],y[i]] > 0:
-               
-                        xx, yy = np.mgrid[:h[i], :w[i]]             
-                        circle = (yy - h[i]//2) ** 2 + (xx - w[i]//2) ** 2
-                        
-                        circle = -circle + np.mean((img_aug)[0])
-                        circle[circle < np.min((img_aug)[0])] = np.min((img_aug)[0])
-                        sc = int(np.min((img_aug)[0])/np.max((img_aug)[0]) * np.mean((img_aug)[0]))  
-                        circle[circle >= sc] = np.max((img_aug)[0])
+                    
+                    m1, m2 = np.mgrid[:h[i], :w[i]]
+                    circle = (m2 - h[i] // 2) ** 2 + (m1 - w[i] // 2) ** 2
 
-                        hh = circle.shape[0]
-                        ww = circle.shape[1]
-                        
-                        img_aug[0, x[i]:x[i]+hh, y[i]:y[i]+ww] = circle
-                        img_aug[1, x[i]:x[i]+hh, y[i]:y[i]+ww] = circle
-                        img_aug[2, x[i]:x[i]+hh, y[i]:y[i]+ww] = circle
-                        mask_aug[x[i]:x[i]+hh, y[i]:y[i]+ww] = 255
+                    target = -target + np.mean((img_aug)[0])
+                    target[target < np.min((img_aug)[0])] = np.min((img_aug)[0])
+                    theta = int(np.min((img_aug)[0]) / np.max((img_aug)[0]) * np.mean((img_aug)[0]))
+                    target[target >= theta] = np.max((img_aug)[0])
+
+                    hh = target.shape[0]
+                    ww = target.shape[1]
+
+                    img_aug[0, x[i]:x[i] + hh, y[i]:y[i] + ww] = target
+                    img_aug[1, x[i]:x[i] + hh, y[i]:y[i] + ww] = target
+                    img_aug[2, x[i]:x[i] + hh, y[i]:y[i] + ww] = target
+                    mask_aug[x[i]:x[i] + hh, y[i]:y[i] + ww] = 255
 
         img = img_aug.swapaxes(0,2)
         mask = mask_aug.swapaxes(0,1)
