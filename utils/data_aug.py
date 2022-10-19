@@ -181,7 +181,7 @@ class Target_Augmentation1(object):
                 if img_aug[0,x[i],y[i]] > 0:
                             
                         m1, m2 = np.mgrid[:h[i], :w[i]]
-                        circle = (m2 - h[i]//2) ** 2 + (m1 - w[i]//2) ** 2
+                        target = (m2 - h[i]//2) ** 2 + (m1 - w[i]//2) ** 2
                         
                         target = -target + np.mean((img_aug)[0])
                         target[target < np.min((img_aug)[0])] = np.min((img_aug)[0])
@@ -249,7 +249,7 @@ class Target_Augmentation2(object):
                 if img_aug[0,x[i],y[i]] > 0:
                     
                     m1, m2 = np.mgrid[:h[i], :w[i]]
-                    circle = (m2 - h[i] // 2) ** 2 + (m1 - w[i] // 2) ** 2
+                    target = (m2 - h[i] // 2) ** 2 + (m1 - w[i] // 2) ** 2
 
                     target = -target + np.mean((img_aug)[0])
                     target[target < np.min((img_aug)[0])] = np.min((img_aug)[0])
