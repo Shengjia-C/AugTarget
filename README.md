@@ -74,7 +74,7 @@ If you find this repo useful, please cite our paper.
 @inproceedings{chen2023augtarget,
   title={AugTarget Data Augmentation for Infrared Small Target Detection},
   author={Chen, Shengjia and Zhu, Jiewen and Ji, Luping and Pan, Hongjun and Xu, Yuhao},
-  booktitle={ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   pages={1--5},
   year={2023},
   organization={IEEE}
