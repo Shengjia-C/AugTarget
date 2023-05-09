@@ -65,7 +65,12 @@ If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.co
 2. Zhang, Tianfang, et al. "AGPCNet: Attention-Guided Pyramid Context Networks for Infrared Small Target Detection." arXiv preprint arXiv:2111.03580 (2021). [[code]](https://github.com/Tianfang-Zhang/AGPCNet)
 
 
+
 ## Citation
+
+If you find this repo useful, please cite our paper. 
+
+```
 @inproceedings{chen2023augtarget,
   title={AugTarget Data Augmentation for Infrared Small Target Detection},
   author={Chen, Shengjia and Zhu, Jiewen and Ji, Luping and Pan, Hongjun and Xu, Yuhao},
@@ -74,4 +79,8 @@ If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.co
   year={2023},
   organization={IEEE}
 }
+```
+
+
+
 
